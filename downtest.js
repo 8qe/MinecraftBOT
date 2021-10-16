@@ -24,7 +24,7 @@ function TurnOnBot(ip, version, port, client , msg) {
     var User2 = Prefixx+Random2
     var User3 = Prefixx+Random3
     var JC = "/register relandor relandor"
-    var JC1 = "/hs rafraf"
+    var JC1 = process.env.JC1
     bot1 = mineflayer.createBot({
         host: ip,
         port: port,
@@ -173,7 +173,7 @@ function TurnOnBot(ip, version, port, client , msg) {
             console.log('Discord Bot Online.')
         })
         
-        client.login("ODk3OTA1NDEwMTg1NDk0NjA4.YWcdlA.tFvXp69_o03q1DOwpHhOUhmh1Eg")
+        client.login(process.env.DToken)
         .catch(error => {
             console.log('Cannot Login into the Account')
         })
