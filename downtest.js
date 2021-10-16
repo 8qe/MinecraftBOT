@@ -24,7 +24,7 @@ function TurnOnBot(ip, version, port, client , msg) {
     var User2 = Prefixx+Random2
     var User3 = Prefixx+Random3
     var JC = "/register relandor relandor"
-    var JC1 = "pele"
+    var JC1 = process.env.JC1
     bot1 = mineflayer.createBot({
         host: ip,
         port: port,
